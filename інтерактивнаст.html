@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт з формами</title>
+    <style>
+        form {
+            padding: 15px 0;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <!-- Тут можуть бути інші елементи навігації -->
+        </ul>
+        <!-- Форма для увіходу користувача -->
+        <form action="#" method="post">
+            <input type="text" name="login" placeholder="Логін" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <input type="submit" value="Увійти">
+        </form>
+    </nav>
+
+    <!-- Форма для надсилання коментарів -->
+    <form action="#" method="post" name="commentf" id="commentf">
+        <p><input type="text" name="author" id="author" value='' size="25" /> Ім'я </p>
+        <p><input type="text" name="email" id="email" value='' size="25"/> Пошта </p>
+        <p><textarea name="comment" id="comment" cols="48" rows="8"> </textarea> </p>
+        <p><input name="submit" type="submit" id="submit" value="Надіслати" /> </p>
+    </form>
+</body>
+</html>
